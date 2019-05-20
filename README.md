@@ -5,4 +5,4 @@ Christophe Cazin -> admin@cyber-secu.com
     The role os this repository is to store
     docker projects to obtain my DCA ( Docker Certified Associate )
 
-    It is juste internal projects.
+    It is just for internal purposes.
