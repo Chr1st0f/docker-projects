@@ -41,6 +41,9 @@ services:
       - /app/node_modules # Means don't map this subdirectory in the ./server directory
       - ./client:/app
   worker:
+    environment:
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
     build:
       dockerfile: Dockerfile.dev
       context: ./worker 
