@@ -16,10 +16,10 @@ services:
     image: redis:4.0.14
 
   api:
+    depends_on:
+      - redis
+      - postgres
     build:
-      depends_on:
-        - redis
-        - postgres
       dockerfile: Dockerfile.dev
       context: ./server 
     volumes:
